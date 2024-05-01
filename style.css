@@ -176,8 +176,7 @@ align-items: center;
 }
 .footer__one{
     display: flex;
-
-    gap:10px;
+    gap:10%;
     
 }
 .footer__two{
