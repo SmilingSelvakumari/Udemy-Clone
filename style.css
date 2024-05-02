@@ -90,12 +90,21 @@ align-items: center;
   
 }
 .Categories p{
-    border: solid black 1px;
-    background-color: #A435F0;;
+ border: solid #A435F0 1px;
+    background-color: #a435f0;;
     color: white;
     padding: 10px;
     border-radius: 20px;
-    border: none;
+    
+    cursor: pointer;
+   
+}
+
+.Categories p:hover{
+transition: 1s;
+background-color:transparent;
+
+color: #A435F0;
 }
 .sale-image img{
     width: 100%;
@@ -111,11 +120,25 @@ align-items: center;
     left:10%;
     background-color: white;
     width: 350px;
-    
     padding: 30px;
+    animation-name:imagezoom ;
+    animation-duration: 2s;
+    opacity:0;
+    animation-fill-mode: forwards;
 }
 
+@keyframes imagezoom {
+    0%{
+        transform:scale(0);
+        opacity: 0;
+    
+    }
 
+    100%{
+        transform:scale(1) ;
+        opacity: 1;
+    }
+}
 
 .recommended{
     padding: 10px;
