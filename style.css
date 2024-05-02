@@ -44,6 +44,13 @@ align-items: center;
     gap: 10px;
     align-items: center;
 }
+
+
+.navbar__s4{
+    display: none;
+    cursor: pointer;
+  
+}
 .mylearning{
     position: relative;
     cursor: pointer;
@@ -106,6 +113,17 @@ background-color:transparent;
 
 color: #A435F0;
 }
+
+.menubar__popup{
+    position: relative;
+    display: none;
+    
+}
+.navbar__s4 p{
+    margin-top: 5px;
+   
+}
+
 .sale-image img{
     width: 100%;
 }
@@ -113,14 +131,16 @@ color: #A435F0;
 
 .sale-image{
     position: relative;
+    
 }
 .sale-image-offer{
     position: absolute;
     top:10%;
     left:10%;
     background-color: white;
-    width: 350px;
-    padding: 30px;
+    border: solid black 2px;
+    width: 35%;
+    padding: 20px;
     animation-name:imagezoom ;
     animation-duration: 2s;
     opacity:0;
@@ -152,8 +172,9 @@ color: #A435F0;
     justify-content: space-between;
 }
 .course-card{
-    width:250px;
-    
+    flex-grow: 1;
+flex-basis :20%;
+margin:5px;    
 }
 .course-card img{
     width:100%;
@@ -217,3 +238,42 @@ align-items: center;
     text-decoration: underline;
 
 }
+/*Media Queries*/
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+
+
+    
+}
+@media screen and (max-width:600px) {
+
+.course-card{
+    flex-basis: 40%;
+}
+
+.navbar__s4{
+    display: block;
+}
+
+.Categories{
+    display: none;
+}
+
+.navbar__s3{
+    display: none;
+}
+.navbar__s4:hover .menubar__popup{
+    display: block;
+    
+}
+
+}
+
+
+
+
+
+
